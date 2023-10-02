@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             panYRelkToolStripMenuItem = new ToolStripMenuItem();
             pastasToolStripMenuItem = new ToolStripMenuItem();
@@ -51,6 +52,12 @@
             zopasToolStripMenuItem = new ToolStripMenuItem();
             verdurasToolStripMenuItem = new ToolStripMenuItem();
             bebidasToolStripMenuItem = new ToolStripMenuItem();
+            buscar = new TextBox();
+            button1 = new Button();
+            agregar = new Button();
+            eliminar = new Button();
+            editar = new Button();
+            regresar = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -69,19 +76,20 @@
             menuStrip1.TabIndex = 0;
             menuStrip1.TabStop = true;
             menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // panYRelkToolStripMenuItem
             // 
             panYRelkToolStripMenuItem.Image = Properties.Resources.pan;
             panYRelkToolStripMenuItem.Name = "panYRelkToolStripMenuItem";
-            panYRelkToolStripMenuItem.Size = new Size(107, 23);
+            panYRelkToolStripMenuItem.Size = new Size(91, 23);
             panYRelkToolStripMenuItem.Text = "Panaderia";
             // 
             // pastasToolStripMenuItem
             // 
             pastasToolStripMenuItem.Image = Properties.Resources.pas;
             pastasToolStripMenuItem.Name = "pastasToolStripMenuItem";
-            pastasToolStripMenuItem.Size = new Size(107, 23);
+            pastasToolStripMenuItem.Size = new Size(91, 23);
             pastasToolStripMenuItem.Text = "Pastas";
             // 
             // cerealesToolStripMenuItem
@@ -89,7 +97,7 @@
             cerealesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { arrozToolStripMenuItem, maizToolStripMenuItem, frijolesToolStripMenuItem, trigoToolStripMenuItem });
             cerealesToolStripMenuItem.Image = Properties.Resources.cereal;
             cerealesToolStripMenuItem.Name = "cerealesToolStripMenuItem";
-            cerealesToolStripMenuItem.Size = new Size(107, 23);
+            cerealesToolStripMenuItem.Size = new Size(91, 23);
             cerealesToolStripMenuItem.Text = "Cereales";
             // 
             // arrozToolStripMenuItem
@@ -121,7 +129,7 @@
             golosinasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { chocolatesToolStripMenuItem, heladosToolStripMenuItem, churrosToolStripMenuItem });
             golosinasToolStripMenuItem.Image = Properties.Resources.golosi;
             golosinasToolStripMenuItem.Name = "golosinasToolStripMenuItem";
-            golosinasToolStripMenuItem.Size = new Size(107, 23);
+            golosinasToolStripMenuItem.Size = new Size(91, 23);
             golosinasToolStripMenuItem.Text = "Golosinas";
             // 
             // chocolatesToolStripMenuItem
@@ -147,7 +155,7 @@
             azucarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mielToolStripMenuItem });
             azucarToolStripMenuItem.Image = Properties.Resources.azucar;
             azucarToolStripMenuItem.Name = "azucarToolStripMenuItem";
-            azucarToolStripMenuItem.Size = new Size(107, 23);
+            azucarToolStripMenuItem.Size = new Size(91, 23);
             azucarToolStripMenuItem.Text = "Azucar";
             // 
             // mielToolStripMenuItem
@@ -160,7 +168,7 @@
             // 
             lacteosToolStripMenuItem.Image = Properties.Resources.lacteo;
             lacteosToolStripMenuItem.Name = "lacteosToolStripMenuItem";
-            lacteosToolStripMenuItem.Size = new Size(107, 23);
+            lacteosToolStripMenuItem.Size = new Size(91, 23);
             lacteosToolStripMenuItem.Text = "Lacteos";
             // 
             // carnesToolStripMenuItem
@@ -168,7 +176,7 @@
             carnesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { blancasToolStripMenuItem, rojasToolStripMenuItem });
             carnesToolStripMenuItem.Image = Properties.Resources.carnes;
             carnesToolStripMenuItem.Name = "carnesToolStripMenuItem";
-            carnesToolStripMenuItem.Size = new Size(107, 23);
+            carnesToolStripMenuItem.Size = new Size(91, 23);
             carnesToolStripMenuItem.Text = "Carnes";
             // 
             // blancasToolStripMenuItem
@@ -188,19 +196,19 @@
             aceitesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consomesToolStripMenuItem, zopasToolStripMenuItem });
             aceitesToolStripMenuItem.Image = Properties.Resources.aceite;
             aceitesToolStripMenuItem.Name = "aceitesToolStripMenuItem";
-            aceitesToolStripMenuItem.Size = new Size(107, 23);
+            aceitesToolStripMenuItem.Size = new Size(91, 23);
             aceitesToolStripMenuItem.Text = "Aceites";
             // 
             // consomesToolStripMenuItem
             // 
             consomesToolStripMenuItem.Name = "consomesToolStripMenuItem";
-            consomesToolStripMenuItem.Size = new Size(180, 24);
+            consomesToolStripMenuItem.Size = new Size(147, 24);
             consomesToolStripMenuItem.Text = "Consomes";
             // 
             // zopasToolStripMenuItem
             // 
             zopasToolStripMenuItem.Name = "zopasToolStripMenuItem";
-            zopasToolStripMenuItem.Size = new Size(180, 24);
+            zopasToolStripMenuItem.Size = new Size(147, 24);
             zopasToolStripMenuItem.Text = "Zopas";
             // 
             // verdurasToolStripMenuItem
@@ -214,8 +222,62 @@
             // 
             bebidasToolStripMenuItem.Image = Properties.Resources.bebida;
             bebidasToolStripMenuItem.Name = "bebidasToolStripMenuItem";
-            bebidasToolStripMenuItem.Size = new Size(107, 23);
+            bebidasToolStripMenuItem.Size = new Size(91, 23);
             bebidasToolStripMenuItem.Text = "Bebidas";
+            // 
+            // buscar
+            // 
+            buscar.Location = new Point(141, 12);
+            buscar.Name = "buscar";
+            buscar.Size = new Size(159, 35);
+            buscar.TabIndex = 1;
+            buscar.TextChanged += textBox1_TextChanged_1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(306, 13);
+            button1.Name = "button1";
+            button1.Size = new Size(97, 34);
+            button1.TabIndex = 2;
+            button1.Text = "Buscar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // agregar
+            // 
+            agregar.Location = new Point(424, 13);
+            agregar.Name = "agregar";
+            agregar.Size = new Size(110, 35);
+            agregar.TabIndex = 3;
+            agregar.Text = "Agregar";
+            agregar.UseVisualStyleBackColor = true;
+            // 
+            // eliminar
+            // 
+            eliminar.Location = new Point(637, 13);
+            eliminar.Name = "eliminar";
+            eliminar.Size = new Size(113, 36);
+            eliminar.TabIndex = 4;
+            eliminar.Text = "Eliminar";
+            eliminar.UseVisualStyleBackColor = true;
+            // 
+            // editar
+            // 
+            editar.Location = new Point(540, 14);
+            editar.Name = "editar";
+            editar.Size = new Size(91, 35);
+            editar.TabIndex = 5;
+            editar.Text = "Editar";
+            editar.UseVisualStyleBackColor = true;
+            // 
+            // regresar
+            // 
+            regresar.Location = new Point(756, 12);
+            regresar.Name = "regresar";
+            regresar.Size = new Size(75, 37);
+            regresar.TabIndex = 6;
+            regresar.Text = "Back";
+            regresar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -223,9 +285,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.LightGray;
+            BackgroundImage = Properties.Resources.logo;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(836, 358);
+            Controls.Add(regresar);
+            Controls.Add(editar);
+            Controls.Add(eliminar);
+            Controls.Add(agregar);
+            Controls.Add(button1);
+            Controls.Add(buscar);
             Controls.Add(menuStrip1);
+            Cursor = Cursors.Default;
+            DoubleBuffered = true;
             Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Margin = new Padding(6, 5, 6, 5);
             Name = "Form1";
@@ -263,5 +336,11 @@
         private ToolStripMenuItem zopasToolStripMenuItem;
         private ToolStripMenuItem verdurasToolStripMenuItem;
         private ToolStripMenuItem bebidasToolStripMenuItem;
+        private TextBox buscar;
+        private Button button1;
+        private Button agregar;
+        private Button eliminar;
+        private Button editar;
+        private Button regresar;
     }
 }

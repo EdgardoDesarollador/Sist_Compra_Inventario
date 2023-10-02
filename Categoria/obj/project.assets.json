@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ProAPP\\Categoria\\Categoria.csproj",
+      "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\Proyecto Sistemas\\Sist_Compra_Inventario\\Categoria\\Categoria.csproj",
       "projectName": "Categoria",
-      "projectPath": "E:\\ProAPP\\Categoria\\Categoria.csproj",
+      "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\Proyecto Sistemas\\Sist_Compra_Inventario\\Categoria\\Categoria.csproj",
       "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-      "outputPath": "E:\\ProAPP\\Categoria\\obj\\",
+      "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\Proyecto Sistemas\\Sist_Compra_Inventario\\Categoria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

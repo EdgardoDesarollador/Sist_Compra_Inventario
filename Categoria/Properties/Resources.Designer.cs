@@ -133,6 +133,16 @@ namespace Categoria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pan {
             get {
                 object obj = ResourceManager.GetObject("pan", resourceCulture);
@@ -156,6 +166,76 @@ namespace Categoria.Properties {
         internal static System.Drawing.Bitmap pasta {
             get {
                 object obj = ResourceManager.GetObject("pasta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar {
+            get {
+                object obj = ResourceManager.GetObject("regresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar1 {
+            get {
+                object obj = ResourceManager.GetObject("regresar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar2 {
+            get {
+                object obj = ResourceManager.GetObject("regresar2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar3 {
+            get {
+                object obj = ResourceManager.GetObject("regresar3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regresar4 {
+            get {
+                object obj = ResourceManager.GetObject("regresar4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ret {
+            get {
+                object obj = ResourceManager.GetObject("ret", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ret1 {
+            get {
+                object obj = ResourceManager.GetObject("ret1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
